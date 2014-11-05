@@ -45,44 +45,56 @@
         <section>
             <h1>Classmates.com</h1>
         </section>
-
         <section>
-            <section data-markdown>
-                <script type="text/template">
-                    # In the Beginning
-                    ## From Back to Front
-                    * Determined we wanted to move towards a responsive SPA
-                    * Transition our existing apps from Tomcat to Ember
-                    * Reduce dependecy on monolithic Java/Spring components
-                    * Decrease time to deploy
-                    * Increase client-script specialization
-                </script>
+            <section>
+                <h2>In the Beginning</h2>
+                <ul>
+                    <li>3-week sprint</li>
+                    <li>Complex inter-dependency</li>
+                    <li>2-day release cycle <strong><em>culminated in 4-hour, "after-hours" deploy &amp; validation</em></strong></li>
+                    <li>Spring and POM for dependency management plus Maven for releases</li>
+                </ul>
+            </section>
+            <section>
+                <h2>From Back to Front</h2>
+                <ul>
+                    <li>Determined we wanted to move towards a responsive SPA</li>
+                    <li>Transition our existing apps from Tomcat to Ember</li>
+                    <li>Reduce dependecy on monolithic Java/Spring components</li>
+                    <li>Decrease time to deploy</li>
+                    <li>Increase client-script specialization</li>
+                </ul>
                 <aside class="notes">
-                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you
+                    open the speaker notes window (hit 's' on your keyboard).
                 </aside>
             </section>
-            <section data-markdown>
-                <script type="text/template">
-                ## Getting Started
-                * Framework discovery and vetting
-                    * Bootstrap
-                    * Ember
-                </script>
+            <section>
+                <h2>Framework Discovery</h2>
+                <ul>
+                    <li>Drop 960, Pick up Bootstrap</li>
+                    <li>Drop "Canvas", Pick up Ember</li>
+                </ul>
+                <aside class="notes">
+                    <p>Considered Skeleton, Inuit, etc, plus full-jQuery and Plugin discovery. Settled on Bootstrap</p>
+
+                    <p>Mention evaluation of Backbone and Angular.</p>
+                </aside>
             </section>
             <section>
                 <h3>Configs, meet <em>Window</em></h3>
                 <pre><code data-trim>
-var envConf={
-    "links": {
-        "apiBaseUrl": "http://api.qa09.sea1.cmates.com",
-        "apiBaseHost": "api.qa09.sea1.cmates.com",
-        "authBaseUrl": "https://secure.qa09.sea1.cmates.com/auth",
-        "checkoutBaseUrl": "https://secure.qa09.sea1.cmates.com/checkout",
-        "cmcdnGraphicsHostUrl": "http://a.qa09.sea1.cmatescdn.com",
-        "cookieDomain": ".qa09.sea1.cmates.com",
-        "directoryBaseUrl": "http://www.qa09.sea1.cmates.com/directory"
-    }
-};</code></pre>
+                    var envConf={
+                    "links": {
+                    "apiBaseUrl": "http://api.qa09.sea1.cmates.com",
+                    "apiBaseHost": "api.qa09.sea1.cmates.com",
+                    "authBaseUrl": "https://secure.qa09.sea1.cmates.com/auth",
+                    "checkoutBaseUrl": "https://secure.qa09.sea1.cmates.com/checkout",
+                    "cmcdnGraphicsHostUrl": "http://a.qa09.sea1.cmatescdn.com",
+                    "cookieDomain": ".qa09.sea1.cmates.com",
+                    "directoryBaseUrl": "http://www.qa09.sea1.cmates.com/directory"
+                    }
+                    };</code></pre>
             </section>
         </section>
 
