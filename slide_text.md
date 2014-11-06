@@ -34,6 +34,12 @@ Moving to Ember-Cli now
 * feature flags
 * cms support (flexpub)
 
+## Node in the Middle
+* Node.js service layer to consolidate communication with Java API
+* Using ~~Socket.io~~, ~~Sock.js~~, ~~Engine.io~~, Express.js for communication
+	* one call for many data points
+	* manages authentication requests
+	* uses RSVP.js to manage requests to Java API
 
 # Learning from our Mistakes
 
@@ -60,8 +66,7 @@ Moving to Ember-Cli now
 
 ## Ember-CLI
 * initializers!
-* store.filter
-* 
+* store.filter for better control of data
 
 ## Managing Data
 * pulling in our currentUser from Tomcat and injecting into the store
