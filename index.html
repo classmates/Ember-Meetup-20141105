@@ -81,6 +81,7 @@
                     <p>Mention evaluation of Backbone and Angular.</p>
                 </aside>
             </section>
+            <!--
             <section>
                 <h3>Configs, meet <em>Window</em></h3>
                 <pre><code data-trim>
@@ -96,6 +97,7 @@
                     }
                     };</code></pre>
             </section>
+            -->
         </section>
         <section>
             <section>
@@ -108,11 +110,26 @@
                     <li>Trying to grow with changes to Ember</li>
                 </ul>
             </section>
-
             <section>
-                <h2></h2>
+                <h2>Our Stack</h2>
+                <ul>
+                    <li>Apache</li>
+                    <li>Tomcat</li>
+                    <li>Node.js => Java API</li>
+                    <li>Ember.js</li>
+                    <li>Require.js</li>
+                </ul>
             </section>
-
+            <section>
+                <h2>Code Organization</h2>
+                <ul>
+                    <li>Require.js for module management</li>
+                    <li>Organized by app (plus core app)</li>
+                    <li>Built into vendor and main modules</li>
+                </ul>
+            </section>
+        </section>
+        <section>
             <section>
                 <h2>Node in the Middle</h2>
                 <ul>
@@ -122,6 +139,43 @@
                     <li>manages authentication requests</li>
                     <li>uses RSVP.js to manage async requests to Java API</li>
                 </ul>
+            </section>
+
+            <section>
+                <h2>Started with Sockets</h2>
+                <ul>
+                    <li>Initially started with Socket.io</li>
+                    <li>Managed session counterpart on server</li>
+                    <li>Lightweight, FAST, shiny</li>
+                    <li>Set groundwork for realtime</li>
+                    <li>Resiliant, auto-reconnection mechanism</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Socket Issues Galore</h2>
+                <ul>
+                    <li>Sticky loadbalancers, not so sticky</li>
+                    <li>Many issues with clients on older browsers</li>
+                    <li>Custom adapter was buggy at times</li>
+                    <li>Changed from Socket.io to Sock.js to Engine.io, with little improvement</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Express Yourself</h2>
+                <ul>
+                    <li>Rewrote Node server as an Express.js API</li>
+                    <li>Ported data enpoint resources to Express.js over a week</li>
+                    <li>Switched to RESTAdapter</li>
+                    <li>Had to come up with a new auth scheme (now per request)</li>
+                    <li>Added support to sideload records</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2></h2>
             </section>
         </section>
     </div>
